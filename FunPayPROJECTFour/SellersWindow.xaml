@@ -1,0 +1,24 @@
+﻿<Window x:Class="FunPayPROJECTFour.SellersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FunPayPROJECTFour"
+        mc:Ignorable="d"
+        Title="SellersWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="SellersDataGrid" AutoGenerateColumns="True" HorizontalAlignment="Center" Margin="0,131,0,99" Width="462"/>
+        <Button Content="Вернуться обратно" HorizontalAlignment="Center" Margin="0,356,0,0" VerticalAlignment="Top" Height="35" Width="190" Click="ButtonBackSellers_Click" Background="White" FontFamily="Arial Black" FontSize="16"/>
+        <TextBox x:Name="SearchTextBox" Grid.Row="0" Margin="-1,1,94,371" Text="Введите ключевое слово" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.02"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="Поиск" Margin="696,0,34,372" Click="SearchButton_Click"/>
+    </Grid>
+</Window>

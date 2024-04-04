@@ -1,0 +1,26 @@
+﻿<Window x:Class="FunPayPROJECTFour.ClientsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FunPayPROJECTFour"
+        mc:Ignorable="d"
+        Title="ClientsWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="ClientsDataGrid" AutoGenerateColumns="True" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10"/>
+        <Button Content="Вернуться обратно" HorizontalAlignment="Center" Margin="0,356,0,0" VerticalAlignment="Top" Height="35" Width="190" Click="ButtonBackClient_Click" Background="White" FontFamily="Arial Black" FontSize="16"/>
+        <TextBox x:Name="SearchTextBox" Grid.Row="0" Margin="3,3,94,379" Text="Введите ключевое слово" RenderTransformOrigin="0.5,0.5" Background="#FFD6D6D6">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.034"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="Поиск" Margin="704,0,10,377" Click="SearchButton_Click" Background="#FFFFED76"/>
+        <ComboBox SelectionChanged="comboBox_SelectionChanged" x:Name="comboBox" HorizontalAlignment="Left" Margin="473,75,0,0" VerticalAlignment="Top" Width="200" SelectedItem="{Binding SelectedValue, Mode=TwoWay}" />
+        <Button x:Name="clearButton" Content="Очистить" HorizontalAlignment="Left" Margin="690,71,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="ClearButton_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="FunPayPROJECTFour.TableWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FunPayPROJECTFour"
+        mc:Ignorable="d"
+        Title="TableWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="AllInfa" AutoGenerateColumns="False" BorderBrush="White" Margin="5">
+            <DataGrid.Background>
+                <ImageBrush ImageSource="/Images/IloveProgrammerOrHate.jpg" Stretch="UniformToFill"/>
+            </DataGrid.Background>
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding ClientFirstName}" Header="Имя Клиента"/>
+                <DataGridTextColumn Binding="{Binding ClaientLastName}" Header="Фамилия Клиента"/>
+                <DataGridTextColumn Binding="{Binding ClientEmail}" Header="Почта Клиента"/>
+                <DataGridTextColumn Binding="{Binding ClientPhone}" Header="Номер Телефона Клиента"/>
+                <DataGridTextColumn Binding="{Binding ClientRating}" Header="Рейтинг Клиента"/>
+                <DataGridTextColumn Binding="{Binding SellerFirstName}" Header="Имя Продавца"/>
+                <DataGridTextColumn Binding="{Binding SellerLastName}" Header="Фамилия Продавца"/>
+                <DataGridTextColumn Binding="{Binding SellerEmail}" Header="Почта Продавца"/>
+                <DataGridTextColumn Binding="{Binding SellerPhone}" Header="Номер Телефона Продавца"/>
+                <DataGridTextColumn Binding="{Binding SellerRating}" Header="Рейтинг Продавца"/>
+                <DataGridTextColumn Binding="{Binding SellerReviewText}" Header="Отзыв О Продавце"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Вернуться обратно" HorizontalAlignment="Center" Margin="0,356,0,0" VerticalAlignment="Top" Height="35" Width="190" Click="Button_Click" Background="White" FontFamily="Arial Black" FontSize="16"/>
+    </Grid>
+</Window>
+    

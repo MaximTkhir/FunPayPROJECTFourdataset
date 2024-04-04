@@ -1,0 +1,25 @@
+﻿<Window x:Class="FunPayPROJECTFour.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FunPayPROJECTFour"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/YeeMoneyOwO.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <Button Content="Полная таблица" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Height="40" Width="168" Click="ShowFullTable_Click" Background="White" Foreground="Black" FontWeight="Bold" FontSize="16"/>
+
+        <Button Content="Поиск" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="100" Click="SearchButton_Click" Background="White" Foreground="Black" FontWeight="Bold" FontSize="16"/>
+
+        <Button Content="Клиенты" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Height="40" Width="100" Click="ShowClients_Click" Background="White" Foreground="Black" FontWeight="Bold" FontSize="16"/>
+
+        <Button Content="Отзывы" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Height="40" Width="100" Click="ShowReviews_Click" Background="White" Foreground="Black" FontWeight="Bold" FontSize="16"/>
+
+        <Button Content="Продавцы" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Height="40" Width="100" Click="ShowSellers_Click" Background="White" Foreground="Black" FontWeight="Bold" FontSize="16"/>
+        
+    </Grid>
+</Window>
